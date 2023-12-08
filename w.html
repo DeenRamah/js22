@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Management System</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<h1>College Management System</h1>
+
+<!-- Student Registration Form -->
+<h2>Student Registration</h2>
+<form id="studentRegistrationForm">
+  <label for="studentName">Student Name:</label>
+  <input type="text" id="studentName" required><br>
+
+  <label for="studentID">Student ID:</label>
+  <input type="text" id="studentID" required><br>
+
+  <label for="feesPayment">Fees Payment ($):</label>
+  <input type="number" id="feesPayment" required><br>
+
+  <button type="button" onclick="addStudent()">Add Student</button>
+</form>
+
+<!-- Laboratory Management -->
+<h2>Laboratory Management</h2>
+<button type="button" onclick="addToLaboratory()">Add to Laboratory</button>
+<button type="button" onclick="removeFromLaboratory()">Remove from Laboratory</button>
+
+<!-- Dormitory Management -->
+<h2>Dormitory Management</h2>
+<button type="button" onclick="addToDormitory()">Add to Dormitory</button>
+<button type="button" onclick="removeFromDormitory()">Remove from Dormitory</button>
+
+<!-- Payments -->
+<h2>Payments</h2>
+<label for="uniformPayment">Uniform Payment ($):</label>
+<input type="number" id="uniformPayment"><br>
+
+<label for="workersPayment">Workers Payment ($):</label>
+<input type="number" id="workersPayment"><br>
+
+<label for="teachersPayment">Teachers Payment ($):</label>
+<input type="number" id="teachersPayment"><br>
+
+<button type="button" onclick="calculateTotalPayment()">Calculate Total Payment</button>
+
+<!-- Cash Management -->
+<h2>Cash Management</h2>
+<button type="button" onclick="saveCash()">Save Cash</button>
+<button type="button" onclick="withdrawFunds()">Withdraw Funds</button>
+<button type="button" onclick="transferFunds()">Transfer Funds</button>
+
+<!-- Results Management -->
+<h2>Results Management</h2>
+<button type="button" onclick="recordResults()">Record Results</button>
+
+<script src="w.js"></script>
+</body>
+</html>

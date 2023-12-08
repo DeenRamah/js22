@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Attendance Recording</title>
+</head>
+<body>
+
+<h2>Hospital Attendance Recording</h2>
+
+<form id="attendanceForm">
+  <label for="patientName">Patient Name:</label>
+  <input type="text" id="patientName" name="patientName" required><br>
+
+  <label for="checkInTime">Check-In Time:</label>
+  <input type="time" id="checkInTime" name="checkInTime" required><br>
+
+  <label for="checkOutTime">Check-Out Time:</label>
+  <input type="time" id="checkOutTime" name="checkOutTime" required><br>
+
+  <button type="button" onclick="recordAttendance()">Record Attendance</button>
+</form>
+
+<br>
+
+<h2>Recorded Attendance</h2>
+
+<table border="1" cellpadding="10">
+  <thead>
+    <tr>
+      <th>Patient Name</th>
+      <th>Check-In Time</th>
+      <th>Check-Out Time</th>
+      <th>Time Spent (hours)</th>
+      <th>Payment</th>
+    </tr>
+  </thead>
+  <tbody id="attendanceTableBody">
+    <!-- Attendance data will be inserted here -->
+  </tbody>
+</table>
+<script src="e.js"></script>
+</body>
+</html>
